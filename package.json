@@ -1,7 +1,7 @@
 {
-  "name": "seq",
+  "name": "pipe",
   "version": "1.0.0",
-  "description": "Sequential composition of JavaScript functions.",
+  "description": "Piped composition of JavaScript functions.",
   "type": "module",
   "main": "index.js",
   "scripts": {
