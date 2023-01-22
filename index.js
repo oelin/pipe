@@ -1,9 +1,12 @@
-export default call => {
+const pipe = call => {
 
-        const composable = x => call(x)
+        const callable = x => call(x)
 
-        composable.call = call
-        composable.then = other => seq(x => other(call(x)))
+        callable.call = call
+        callable.pipe = other => pipe(x => other(call(x)))
 
-        return composable
+        return callable
 }
+
+
+export default pipe
